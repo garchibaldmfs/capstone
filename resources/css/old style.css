@@ -1,0 +1,74 @@
+/* "Tamming" Box Model With Reset */
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: gray;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h4 {
+  font-weight: bold;
+}
+.title1 {
+  font-weight: bold;
+}
+
+header .flex-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    color: black;
+    background-color: white;
+    margin-left: 24px;
+}
+/* Navigation Bar */
+
+header .menu {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.menu ul {
+  display: flex;
+  align-items: right;
+}
+
+div .main-banner {
+font: white;
+}
+
+
+/* from teacozy - locations move to columns*/
+.location {
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* change to display icons for small screens */
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+/*
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  */
+  .mobile-nav {
+    display: none;
+  }
