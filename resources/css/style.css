@@ -1,9 +1,9 @@
 body {
     margin: 0;
     font-family: "Helvetica", sans-serif;
-    color: gray;
+    background-color: lightgray;
     font-size: 22px;
-    text-align: center;
+    text-align: left;
     opacity: 0.9;
 }
 /* spec - height 32 px, left padding 24 px */
@@ -11,11 +11,7 @@ header img {
     height: 32px;
     padding-left: 24px;
 }
-.flex-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 span.title1 {
   color: black;
   font-weight: bold;
@@ -34,24 +30,52 @@ header {
     border-bottom: 1px solid seashell;
     align-items: center;
 }
-h2, h3, h4 {
+
+.flex-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+
+}
+/* this is not working */
+.flex-container page1sections {
+    flexmargin: 24px 32px;
+    space-around: 24px;
+}
+
+
+h1 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  background-color: lightgray;
+  padding: 10px 24px 10px 24px;
+  margin: 0;
+}
+
+
+h3 {
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  margin: 0;
+}
+
+h4 {
+    margin: 0;
+    padding: 10px 24px 10px 24px;
+    background-color: lightgray;
+    font-weight: normal;
+    text-align: left;
+}
+h2 {
     margin: 0;
     padding: 10px;
-    background-color: white;
 }
 
 a {
     color: black;
-}
-#mission {
-    height: 700px;
-    background-image: url(../../resources/img-mission-background.jpg);
-    padding-top: 70px;
-}
-#mission .content {
-    margin: auto;
-    background-color: black;
-    width: 100%;
 }
 nav {
     text-align: right;
@@ -68,20 +92,138 @@ nav {
     margin: auto;
     padding-top: 70px;
 }
-#bannersection {
+#page1sections {
+    height: 500px;
+    padding-top: 32px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  background: lightgray;
+  padding: 24px 32px 24px 0;
+
+}
+
+.containerimage {
+  width: calc(60% - 24px);
+
+    }
+
+.containercontent {
+    width: calc(40% - 24px);
+    opacity: 1.0;
+    padding: 10px;
+    margin: 15px 24px;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.page1image {
+    margin: 0;
+    padding: 10px 24px 10px 24px;
+    background-color: lightgray;
+    font-weight: normal;
+    text-align: left;
+    width: calc(60% - 24px);
+}
+
+.page1content {
+    margin: 0;
+    background-color: lightgray;
+    font-weight: normal;
+    text-align: left;
+    width: calc(40% - 24px);
+
+}
+
+#page2sections {
+    background-image: url(../../resources/img-locations-background.jpg);
     height: 500px;
     padding-top: 70px;
 }
-.banner {
+.page2section {
     opacity: 1.0;
     padding: 10px;
     margin: 5px 20px;
-    background-color: gray;
+    background-color: black;
     flex-basis: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+
+.supporting {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 560px)
+.supporting {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+    height: 8rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+#page3sections {
+    background-image: url(../../resources/img-locations-background.jpg);
+    height: 500px;
+    padding-top: 70px;
+}
+.page3section {
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: white;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.page3section h2 {
+  text-align: center;
+  padding: 32px 0 32px 0;
+  margin: 0;
+}
+
+.page3section p {
+  padding: 0;
+  margin: 0 0 0 16px;
+}
+#page3 h2 {
+  font: bold;
+  text-align: center;
+  padding: 32px 0px 32px 0;
+}
+#p3h1 {
+  font-weight: bold;
+  text-align: left;
+  padding: 16px 0 0 16px;
+  margin: 0;
+}
+
+#p3h2 {
+  text-align: left;
+  padding: 8px 16px 8px 16px;
+  margin: 0;
+}
+
 h5 {
     display: block;
     font-size: 0.83em;
