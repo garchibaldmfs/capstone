@@ -81,11 +81,13 @@ nav {
     text-align: right;
     flex-grow: 1;
 }
+/*
 .item img {
     height: 200px;
     margin: 10px;
     display: block;
 }
+*/
 
 .service img {
     display: block;
@@ -95,61 +97,70 @@ nav {
     height: auto;
 }
 
+.countainerimage img {
+  padding: 32px 24px 32px 24px;
+}
 img {
     border-style: none;
-}
-#store {
-    height: 700px;
-    width: 1000px;
-    margin: auto;
-    padding-top: 70px;
-}
-#page1sections {
-    height: 500px;
-    padding-top: 32px;
+  /*  margin-top: 32px; */
 
 }
 
-.container {
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
+.p1container {
+    display: flex;
+/*    flex-wrap: wrap; */
+/*    padding: 32px 24px 32px 24px; */
+
+/*    justify-content: left;*/
+}
+
+@media only screen and (max-width: 560px) {
+  .p1container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .p1image {
+    flex: 100%;
+  }
+  .page1starthere {
+      margin: 0 48px 0 0;
+      font-weight: normal;
+      color: white;
+      background-color: lightgreen;
+      text-align: center;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+.p1image {
+  flex: 60%;
+  padding: 32px 24px 32px 24px;
   background: lightgray;
-  padding: 24px 32px 24px 0;
-
-}
-
-.containerimage {
-  width: calc(60% - 24px);
-
     }
 
-.containercontent {
-    width: calc(40% - 24px);
-    opacity: 1.0;
-    padding: 10px;
-    margin: 15px 24px;
-    flex-basis: 280px;
-    display: flex;
-    flex-direction: column;
+.p1verbiage {
+    flex: 40%;
     justify-content: left;
-}
-.page1image {
-    margin: 0;
-    padding: 10px 24px 10px 24px;
-    background-color: lightgray;
-    font-weight: normal;
     text-align: left;
-    width: calc(60% - 24px);
+    background: lightgray;
 }
-
+.page1h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
 .page1content {
     margin: 0;
-    background-color: lightgray;
     font-weight: normal;
-    text-align: left;
-    width: calc(40% - 24px);
-
+}
+.page1starthere {
+    margin: 0 48px 0 0;
+    font-weight: normal;
+    color: white;
+    background-color: black;
+    text-align: center;
 }
 
 #page2sections {
