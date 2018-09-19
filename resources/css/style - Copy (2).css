@@ -178,6 +178,34 @@ img {
     width: 65%;
         }
 
+.p2practiceside {
+  /* should be 60% */
+  width: 60%;
+  padding: 32px 24px 32px 24px;
+  background: white;
+  }
+
+.p2rightside {
+/*  display: flex; */
+  flex-directipn: row;
+  /* should be 40% */
+  width: 40%;
+  padding: 32px 24px 32px 24px;
+  justify-content: left;
+  text-align: left;
+  background: lightgreen;
+  }
+
+.p2practiceside img {
+          height: auto;
+          width: 100%;
+        }
+
+.p2rightside img {
+                  height: auto;
+                  width: 100%;
+                }
+
 .page2h1 {
         margin: 0;
         font-weight: bold;
@@ -189,6 +217,31 @@ img {
         margin: 0;
         font-weight: normal;
         }
+/*
+    .p2rightside img {
+          width: 100%;
+  */
+    .p2rightsiderow {
+        display: flex;
+        flex-direction: row;
+    /*    justify-content: space-between; */
+    /*    align-items: center;*/
+    /*    width: 5rem;
+        height: 8rem;
+        margin: 3rem;
+        */
+        text-align: left;
+    }
+    .page2section {
+        opacity: 1.0;
+    /*    padding: 10px; */
+        margin: 5px 20px;
+        background-color: white;
+        flex-basis: 180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
 
 .page3sections {
     padding: 0 40px 0 72px;
