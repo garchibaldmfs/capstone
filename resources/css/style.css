@@ -205,24 +205,16 @@ img {
         justify-content: left;
     }
 
-.service {
-    display: flex;
-    flex-direction: row;
-/*    justify-content: space-between; */
-/*    align-items: center;*/
-/*    width: 5rem;
-    height: 8rem;
-    margin: 3rem;
-    */
-    text-align: left;
-}
+.page3sections {
+    padding: 0 40px 0 72px;
+/*    space-around: 24px; */
+    }
+
 
 .page3section {
     width: 28%;
     opacity: 1.0;
-/*    padding: 10px; */
     margin: 32px 0px 0px 32px;
-/*    padding: 32px; */
     background-color: white;
 /*    flex-basis: 180px; */
 /*    display: flex; */
@@ -248,12 +240,14 @@ img {
 }
 */
 
+/*
 .page3section h2 {
   text-align: center;
   padding: 32px 0 32px 0;
   margin: 0;
   text-weight: bold;
 }
+*/
 
 .page3section p {
   padding: 0;
