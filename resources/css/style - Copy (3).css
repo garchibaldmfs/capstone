@@ -43,7 +43,7 @@ header {
     width: 100%;
 
 }
-
+/* this is not working */
 .flex-container page1sections {
     flexmargin: 24px 32px;
     space-around: 24px;
@@ -87,6 +87,14 @@ nav {
     text-align: right;
     flex-grow: 1;
 }
+/*
+.item img {
+    height: 200px;
+    margin: 10px;
+    display: block;
+}
+*/
+
 
 .countainerimage img {
   padding: 32px 24px 32px 24px;
@@ -99,7 +107,10 @@ img {
 
 .p1container {
     display: flex;
-    flex-wrap: wrap;
+/*    flex-wrap: wrap; */
+/*    padding: 32px 24px 32px 24px; */
+
+/*    justify-content: left;*/
 }
 
 
@@ -107,22 +118,15 @@ img {
 /*  flex: 60%; */
   padding: 32px 24px 32px 24px;
   background: lightgray;
-  width: 60%;
+  width: 100%;
   height: auto;
     }
-
-.p1image img {
-      height: auto;
-      width: 100%;
-    }
-
 
 .p1verbiage {
     flex: 40%;
     justify-content: left;
     text-align: left;
     background: lightgray;
-    padding: 0 96px 0 0;
 }
 .page1h1 {
     margin: 0;
@@ -134,7 +138,7 @@ img {
     font-weight: normal;
 }
 .page1starthere {
-    padding: 24px;
+    margin: 0 48px 0 0;
     font-weight: normal;
     color: white;
     background-color: black;
@@ -164,23 +168,10 @@ img {
     padding: 32px 24px 32px 24px;
     background: white;
     }
-
-.p2mobile {
-        width: 100%;
-        padding: 32px 24px 32px 24px;
-        background: white;
-        }
-
 .p2right img {
     height: auto;
     width: 35%;
     }
-
-.mobileimg img {
-    height: auto;
-    width: 100%;
-        }
-
 
 .p2right p {
     height: auto;
@@ -195,12 +186,10 @@ img {
 
 .page2h2 {
         color: blue;
-        font-size: .80em;
                 }
 
 .page2content {
         font-weight: normal;
-        font-size: .80em;
         }
 
 .lastp2box {
@@ -219,6 +208,9 @@ img {
     opacity: 1.0;
     margin: 32px 0px 0px 32px;
     background-color: white;
+/*    flex-basis: 180px; */
+/*    display: flex; */
+/*    flex: 10%; */
     flex-direction: column;
     justify-content: center;
 }
@@ -228,11 +220,32 @@ img {
   width: 100%;
 }
 
+/* media query at parent level */
+/*
+@media only screen and (max-width: 560px)
+.page3sections {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: gray;
+}
+*/
+
+/*
+.page3section h2 {
+  text-align: center;
+  padding: 32px 0 32px 0;
+  margin: 0;
+  text-weight: bold;
+}
+*/
+
 .page3section p {
   padding: 0;
   margin: 0 0 0 16px;
 }
-.page3 h2 {
+#page3 h2 {
   font-weight: bold;
   text-align: center;
   padding: 32px 0 0 0;
@@ -266,95 +279,27 @@ footer {
     text-align: left;
     padding-left: 20px;
 }
-/* desktop rules */
-@media only screen and (min-width: 561px) {
-.mobilebar {
-    display: none;
-    }
 
-.mobileimg img{
-      display: none;
-    }
-.p1mobile {
-      display: none;
-      }
-.p2mobile {
-      display: none;
-      }
-
-.p3mobile {
-    display: none;
-    }
-}
-
-/* mobile rules */
 @media only screen and (max-width: 560px) {
-.desktopbar {
-  display: none;
+  .page1starthere {
+      margin: 0 48px 0 12px;
+      font-weight: normal;
+      color: red;
+      background-color: lightgreen;
+      text-align: center;
   }
-.p1image {
-    margin: 0;
-    padding: 0;
-    background: lightgray;
-    width: 100%;
-    height: auto;
-      }
-.p1verbiage {
-  padding:32px 16px 32px 16px;
-}
-.page1starthere {
-    padding: 16px 0 16px 0;
-    font-weight: normal;
-    color: white;
-    background-color: gray;
-    text-align: center;
-      }
-.p1desktop {
-      display: none;
-      }
-
-.p2desktop {
-  display: none;
-}
-.desktopimg img{
-  display: none;
-}
-.p3desktop {
-    display: none;
-    }
-
-.p3mobile {
-  background-color: white
-}
-
-.p3mobile h2 {
-/*  padding: 32px 0 16px 0; */
-  text-align;center
-  background-color: white
-}
-.page3sections {
-      padding: 0 16px 8px 16px;
-      background-color: white;
-    }
-
-.page3section {
-      width: 100%;
-      margin: 16px 16px 24px 16px;
-      background-color: lightgray;
-      flex-direction: column;
-      justify-content: left;
+  .p1container {
+    display: flex;
+    flex-wrap: wrap;
   }
+  .p1image {
+    flex: 100%;
 
-
-#p3h1 {
-  padding: 16px 16px 24px 16px;
-  background-color: lightgray;
-    }
-#p3h2 {
-  display: none;
   }
-.page3section p {
-    display: none;
+  .page1h1 {
+      margin: 20px;
+      font-weight: bold;
+      font-size: 1.5em;
+      color: red;
     }
-
 }
