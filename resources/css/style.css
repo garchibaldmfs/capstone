@@ -226,6 +226,7 @@ img {
 .page3section img {
   height: auto;
   width: 100%;
+  padding: 16px 0 0 16px;
 }
 
 .page3section p {
@@ -266,7 +267,7 @@ h5 {
 .page4 h2 {
   font-weight: bold;
   text-align: center;
-  padding: 32px 0 32px 0;
+  padding: 32px 0 0 0;
   background-color: white;
 }
 
@@ -288,18 +289,33 @@ h5 {
     background: white;
     }
 
+.p4right img {
+    padding: 16px;
+    }
 .p4topbox {
     background: lightgray;
-        }
+    }
 .p4bottombox {
     background: white;
-                }
+    }
+
+.page4h1 {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 16px 0 16px 16px;
+    }
+
+.page4content {
+    font-weight: normal;
+    font-size: .80em;
+    padding: 0 0 0 16px;
+    }
 
 .p4mobile {
         width: 100%;
         padding: 32px 24px 32px 24px;
         background: white;
-        height: auto;
+        height: 300px;
       }
 
 footer {
