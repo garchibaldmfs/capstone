@@ -262,9 +262,56 @@ h5 {
 #contact {
     height: 200px;
 }
+
+.page4 h2 {
+  font-weight: bold;
+  text-align: center;
+  padding: 32px 0 32px 0;
+  background-color: white;
+}
+
+.p4left {
+    width: 60%;
+    padding: 32px 24px 32px 24px;
+    background: white;
+    }
+
+.p4left video {
+    height: auto;
+    width: 100%;
+    }
+
+
+.p4right {
+    width: 40%;
+    padding: 32px 24px 32px 24px;
+    background: white;
+    }
+
+.p4topbox {
+    background: lightgray;
+        }
+.p4bottombox {
+    background: white;
+                }
+
+.p4mobile {
+        width: 100%;
+        padding: 32px 24px 32px 24px;
+        background: white;
+        }
+
 footer {
     text-align: left;
     padding-left: 20px;
+}
+
+footer {
+    text-align: left;
+    padding-left: 16px 24px 24px 24px;
+    font-size: .65em;
+    background: white;
+
 }
 /* desktop rules */
 @media only screen and (min-width: 561px) {
@@ -283,10 +330,16 @@ footer {
       }
 
 .p3mobile {
-    display: none;
-    }
-}
+      display: none;
+      }
+.p4mobile {
+      display: none;
+      }
 
+.footerdesktop {
+        display: none;
+        }
+}
 /* mobile rules */
 @media only screen and (max-width: 560px) {
 .desktopbar {
@@ -322,6 +375,14 @@ footer {
 .p3desktop {
     display: none;
     }
+
+.p4desktop {
+        display: none;
+        }
+
+.footerdesktop {
+        display: none;
+        }
 
 .p3mobile {
   background-color: white
